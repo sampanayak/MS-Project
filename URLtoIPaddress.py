@@ -8,5 +8,5 @@ with open('urls.txt', 'r') as filehandle:
 		print(o.netloc)
 		print(socket.gethostbyname(o.netloc))
 		
-filehandle.close()
+#filehandle.close()
 		
