@@ -1,7 +1,0 @@
-3
-accgatccggtaaactgac
-gat
-acgtacgttacgtacgtacgtacgtacgt
-tac
-acgtacgtacgttacgtacgtacgtacgt
-cgt
