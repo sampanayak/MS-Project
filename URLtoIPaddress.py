@@ -4,6 +4,7 @@ import socket
 from urllib.parse import urlparse
 contents = []
 df = pd.read_csv('top500.pages.05.18.txt')
+
 fileIp = open("IPaddress.txt", "w")
 file = open("pathKeyword.txt", "w")
 with open('top500.pages.05.18.txt', 'r+') as filehandle:
@@ -12,8 +13,8 @@ with open('top500.pages.05.18.txt', 'r+') as filehandle:
 		o = urlparse(line)
 		
 		#print(o)
-		print(o.netloc)
-		print(o.path)
+		#print(o.netloc)
+		#print(o.path)
 		#print(socket.gethostbyname(o.netloc))
 		#s = pd.Series(socket.gethostbyname(o.netloc))
 		#print(s)
@@ -21,7 +22,7 @@ with open('top500.pages.05.18.txt', 'r+') as filehandle:
 		#df['Keywords'] = ((o.path).split("/"))
 		#print(df['keywords'])
 		file.write(o.path)
-		fileIp.write(o.netloc)
+		#fileIp.write(o.netloc)
 	
 	#df.to_csv('urls.csv', sep=',', index = False)
 

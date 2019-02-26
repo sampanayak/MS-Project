@@ -1,4 +1,3 @@
-SchemeURL
 http://wordpress.org/
 http://twitter.com/share
 http://plus.google.com/share
