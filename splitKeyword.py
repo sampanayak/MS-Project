@@ -15,9 +15,13 @@ with open("splitedKeyword.txt", "r+") as f:
 #file1.close()'''
 
 file = open("testSplitedKeyword.txt", "w")
+import re
+delimiters = ['\n', ' ', '/', ',', '.', ':', '!', '$', '?', '%', ';', '@']
 with open("splitedKeyword.txt") as f:
 	content = f.readlines()
 	#print(content)
+	#split contents of the file for all delimiters using for loop
+	'''
 	for lines in content[0].split():
 		for split0 in lines.split(' '):
 			for split1 in split0.split(','):
@@ -29,4 +33,5 @@ with open("splitedKeyword.txt") as f:
 									for split7 in split6.split('%'):
 										for word in split7.split('_'):
 											if word != "":
-												print(word)
+												print(word)'''
+	words = re.split('|')
